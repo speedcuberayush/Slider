@@ -1,4 +1,4 @@
-(function() {
+(function () {
 
     var slidersContainer = document.querySelector('.sliders-container');
 
@@ -11,7 +11,7 @@
             return '0' + i;
         },
         style: {
-            transform: [{scale: [0.4, 1]}],
+            transform: [{ scale: [0.4, 1] }],
             opacity: [0, 1]
         },
         interactive: false
@@ -19,17 +19,17 @@
 
     // Initializing the titles slider
     var titles = [
-        'King of the Ring Fight',
-        'Sound of Streets',
-        'Urban Fashion',
-        'Windy Sunset'
+        'Understanding the term AI',
+        'FUTURE',
+        'AI TOOLS',
+        'AI FOR DEVELOPERS'
     ];
     var msTitles = new MomentumSlider({
         el: slidersContainer,
         cssClass: 'ms--titles',
         range: [0, 3],
         rangeContent: function (i) {
-            return '<h3>'+ titles[i] +'</h3>';
+            return '<h3>' + titles[i] + '</h3>';
         },
         vertical: true,
         reverse: true,
@@ -45,7 +45,7 @@
         cssClass: 'ms--links',
         range: [0, 3],
         rangeContent: function () {
-            return '<a class="ms-slide__link">View Case</a>';
+            return '<a class="ms-slide__link" target="_blank" href="https://www.youtube.com/watch?v=PHNJ2_4oefE"">View Case</a>';
         },
         vertical: true,
         interactive: false
@@ -71,11 +71,11 @@
         // Styles to interpolate as we move the slider
         style: {
             '.ms-slide__image': {
-                transform: [{scale: [1.5, 1]}]
+                transform: [{ scale: [1.5, 1] }]
             }
         },
         // Update pagination if slider change
-        change: function(newIndex, oldIndex) {
+        change: function (newIndex, oldIndex) {
             if (typeof oldIndex !== 'undefined') {
                 paginationItems[oldIndex].classList.remove('pagination__item--active');
             }
@@ -84,7 +84,7 @@
     });
 
     // Select corresponding slider item when a pagination button is clicked
-    pagination.addEventListener('click', function(e) {
+    pagination.addEventListener('click', function (e) {
         if (e.target.matches('.pagination__button')) {
             var index = paginationItems.indexOf(e.target.parentNode);
             msImages.select(index);

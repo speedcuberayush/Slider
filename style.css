@@ -1,4 +1,11 @@
-.ms--images {
+@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
+
+body {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.ms--images.ms-container--horizontal {
   position: relative;
   overflow: hidden;
 }
@@ -27,9 +34,9 @@
   width: 700px;
   height: 400px;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .ms--images {
@@ -39,16 +46,16 @@
   left: -70px;
 }
 .ms--images .ms-slide:nth-child(1) .ms-slide__image {
-  background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/momentum-slider@3b3037f7f1bab402fe3c75cd20ab18e04e1cbe0b/portfolio-carousel/img/harvey-gibson-498362-unsplash.jpg");
+  background-image: url("https://i.ytimg.com/vi/PHNJ2_4oefE/maxresdefault.jpg");
 }
 .ms--images .ms-slide:nth-child(2) .ms-slide__image {
-  background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/momentum-slider@3b3037f7f1bab402fe3c75cd20ab18e04e1cbe0b/portfolio-carousel/img/andre-hunter-461305-unsplash.jpg");
+  background-image: url("https://i.ytimg.com/vi/JEFEJsTxPCc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDCV9gsu-OBpPApSZzLkLr_fE-RIA");
 }
 .ms--images .ms-slide:nth-child(3) .ms-slide__image {
-  background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/momentum-slider@3b3037f7f1bab402fe3c75cd20ab18e04e1cbe0b/portfolio-carousel/img/joanna-nix-389128-unsplash.jpg");
+  background-image: url("https://i.ytimg.com/vi/_vA7GHjpw4s/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCNMzRmwO76gHPcD4xEW1X3jDeu6w");
 }
 .ms--images .ms-slide:nth-child(4) .ms-slide__image {
-  background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/momentum-slider@3b3037f7f1bab402fe3c75cd20ab18e04e1cbe0b/portfolio-carousel/img/jurica-koletic-321003-unsplash.jpg");
+  background-image: url("https://i.ytimg.com/vi/OC2xGTv9-lw/maxresdefault.jpg");
 }
 .ms--images .ms-slide__image-container {
   width: 80%;
@@ -91,9 +98,9 @@
   width: 240px;
   height: 240px;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .ms--numbers {
@@ -144,9 +151,9 @@
   width: 400px;
   height: 170px;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .ms--titles {
@@ -198,9 +205,9 @@
   width: 120px;
   height: 60px;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .ms--links {
@@ -238,21 +245,22 @@
   margin: 0 5px;
   cursor: pointer;
 }
-.pagination__button:before, .pagination__button:after {
+.pagination__button:before,
+.pagination__button:after {
   content: "";
   position: absolute;
   left: 0;
   top: calc(50% - 1px);
   width: 100%;
-  box-shadow: 0 1px 0 #0B0D14;
+  box-shadow: 0 1px 0 #0b0d14;
 }
 .pagination__button:before {
   height: 2px;
-  background-color: #6A3836;
+  background-color: #0b0d14;
 }
 .pagination__button:after {
   height: 3px;
-  background-color: #DC4540;
+  background-color: #0096ff;
   opacity: 0;
   transition: 0.5s opacity;
 }
@@ -293,13 +301,15 @@
     transform: scale(0.8);
   }
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 body {
   color: white;
-  background-color: #1B1C21;
+  background-color: #1b1c21;
   overflow: hidden;
 }
 
@@ -349,7 +359,8 @@ a {
   margin-left: auto;
 }
 
-.header__menu__list, .footer__menu__list {
+.header__menu__list,
+.footer__menu__list {
   display: flex;
   list-style: none;
   margin: 0;
@@ -381,7 +392,8 @@ a {
 }
 
 @media screen and (max-width: 860px) {
-  .header__menu, .footer {
+  .header__menu,
+  .footer {
     display: none;
   }
 }
